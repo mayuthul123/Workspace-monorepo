@@ -1,0 +1,11 @@
+
+npm install vite-plugin-dts vite-tsconfig-paths --workspace@npm-workspace-demo/components
+
+npm run build --workspace @npm-workspace-demo/components
+
+npm install @npm-workspace-demo/components --workspace@npm-workspace-demo/app1
+
+npm install @npm-workspace-demo/components --workspace@npm-workspace-demo/app2
+
+npm run dev --workspace @npm-workspace-demo/app1
+npm run dev --workspace @npm-workspace-demo/app2
